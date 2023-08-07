@@ -7,7 +7,7 @@ function Articles () {
     const [items, setItems] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('https://64c12108fa35860baea00799.mockapi.io/Items')
+        fetch('https://financial-market-news-bl-bd663-default-rtdb.europe-west1.firebasedatabase.app/Items')
         .then((res) => res.json())
         .then((arr) => {
         setItems(arr);

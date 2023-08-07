@@ -11,7 +11,7 @@ function Article () {
     React.useEffect(() => {
         async function fetchArticle() {
             try {
-                const {data} = await axios.get('https://64c12108fa35860baea00799.mockapi.io/Items' + title);
+                const {data} = await axios.get('https://financial-market-news-bl-bd663-default-rtdb.europe-west1.firebasedatabase.app/Items' + title);
                 setArticle(data);
             } catch (error) {
                 alert('Error');
